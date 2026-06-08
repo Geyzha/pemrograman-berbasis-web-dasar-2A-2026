@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-normal tracking-normal">
+
+    <nav class="fixed w-full z-30 top-0 bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-500">Jikokoko.</a>
+            <div class="space-x-8 hidden md:flex">
+                <a href="#about" class="hover:text-blue-500 transition">Tentang</a>
+                <a href="#skills" class="hover:text-blue-500 transition">Keahlian</a>
+                <a href="#projects" class="hover:text-blue-500 transition">Proyek</a>
+                <a href="#contact" class="hover:text-blue-500 transition">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+            
+            <div class="flex-shrink-0 mb-8 md:mb-0 md:mr-10 text-center">
+                <img src="foto.jpeg" alt="Foto Profil [Nama Anda]" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full border-4 border-white shadow-lg mx-auto md:mx-0">
+            </div>
+
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Halo, Saya <span class="text-blue-500 underline">[Geyzha Fabbian Cahyo]</span></h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto md:mx-0">
+                    Mahasiswa Sistem Informasi yang fokus pada pengembangan basis data, keamanan jaringan, dan antarmuka web yang modern.
+                </p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#projects" class="bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition">Lihat Proyek</a>
+                    <a href="#contact" class="border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-full font-semibold hover:bg-blue-500 hover:text-white transition">Hubungi Saya</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-50 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Tentang Saya</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                Saya memiliki minat besar dalam desain basis data relasional dan pengembangan front-end. Saya senang memecahkan masalah kompleks melalui kode yang bersih dan efisien, baik itu mengoptimalkan query SQL maupun membangun layout web yang responsif dengan CSS Grid dan Flexbox.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Keahlian Teknis</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-8 bg-white rounded-2xl shadow-sm border hover:shadow-md transition">
+                    <i class="fas fa-database text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Manajemen Basis Data</h3>
+                    <p class="text-gray-600">Ahli dalam MySQL, perancangan ERD, dan optimasi relasi antar tabel.</p>
+                </div>
+                <div class="p-8 bg-white rounded-2xl shadow-sm border hover:shadow-md transition">
+                    <i class="fas fa-code text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Web Dev</h3>
+                    <p class="text-gray-600">Membangun landing page responsif menggunakan Tailwind CSS, HTML5, dan JavaScript.</p>
+                </div>
+                <div class="p-8 bg-white rounded-2xl shadow-sm border hover:shadow-md transition">
+                    <i class="fas fa-shield-alt text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Keamanan Jaringan</h3>
+                    <p class="text-gray-600">Implementasi logika firewall dan simulasi keamanan menggunakan Python.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-gray-50 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Proyek Terbaru</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="group overflow-hidden rounded-xl border bg-white">
+                    <div class="bg-gray-200 h-64 flex items-center justify-center group-hover:scale-105 transition duration-500">
+                        <span class="text-gray-500">Preview Proyek Toko Buku</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Sistem Manajemen Toko Buku</h3>
+                        <p class="text-gray-600 mb-4">Aplikasi manajemen stok dan pengadaan buku yang dirancang dengan integritas data relasional yang ketat.</p>
+                        <span class="text-sm font-medium bg-blue-100 text-blue-600 px-3 py-1 rounded-full">SQL</span>
+                        <span class="text-sm font-medium bg-green-100 text-green-600 px-3 py-1 rounded-full">Database Design</span>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-xl border bg-white">
+                    <div class="bg-gray-200 h-64 flex items-center justify-center group-hover:scale-105 transition duration-500">
+                        <span class="text-gray-500">Preview Riset JTTIK</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Analisis Riset JTTIK</h3>
+                        <p class="text-gray-600 mb-4">Presentasi dan analisis mendalam mengenai jurnal teknologi informasi terkait optimasi algoritma blending.</p>
+                        <span class="text-sm font-medium bg-purple-100 text-purple-600 px-3 py-1 rounded-full">Research</span>
+                        <span class="text-sm font-medium bg-red-100 text-red-600 px-3 py-1 rounded-full">IT Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-4 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Mari Berkolaborasi</h2>
+            <p class="mb-10 text-gray-400">Saya selalu terbuka untuk diskusi mengenai pengembangan web atau desain basis data.</p>
+            <div class="flex justify-center space-x-6 text-3xl">
+                <a href="#" class="hover:text-blue-500 transition"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/08155020761" class="hover:text-blue-500 transition"><i class="fab fa-whatsapp"></i></a>
+                <a href="biantcahyo@gmail.com" class="hover:text-blue-500 transition"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="mt-12 text-gray-500 text-sm">© 2026 [Nama Anda]. Dibuat dengan Tailwind CSS.</p>
+        </div>
+    </section>
+
+</body>
+</html>
